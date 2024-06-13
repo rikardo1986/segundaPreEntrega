@@ -692,6 +692,33 @@ footer p{
     grid-row: 3/4;
 }
 
+@media (max-width:1024px) {
+    .documentos{
+        grid-template-columns:repeat(2, 15rem);
+        grid-template-rows: repeat(3, 8rem);
+    }
+
+@media (max-width:768px) {
+    .documentos{
+        grid-template-columns:repeat(2, 12rem);
+        grid-template-rows: repeat(3, 6rem);
+    }
+    .documentos button{
+        font-size:1rem;
+    }
+}
+@media (max-width:425px) {
+    .documentos{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 8rem);
+        grid-template-rows: repeat(3, 4rem);
+    }
+    .documentos button{
+        font-size: 0.8rem;
+    }
+}
+}
+
 /* CONTACTO */
 
 .container {
